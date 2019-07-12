@@ -1,24 +1,83 @@
 <resources>
-    <string name="app_name">Recycle View</string>
+    <string name="app_name">Android ITPlus Demo</string>
+    <string name="activity_control_name">Demo control</string>
+    <string name="activity_control_name2">Quản lý nhân viên</string>
+    <string name="activity_quanlykhachhang">Quản lý khách hàng</string>
+    <string name="activity_quanlysinhvien">Quản lý sinh viên</string>
     <string name="title_activity_navigation_draw">NavigationDrawActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigationdrawer_open">Mở navigation drawer</string>
+    <string name="navigationdrawer_close">Đóng </string>
     <string name="nav_header_title">DEMO ANDROID</string>
     <string name="nav_header_subtitle">minhtuannb287@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Cấu hình</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_evenhandler">Event Handler</string>
+    <string name="menu_control">Control demo</string>
+    <string name="menu_control2">Control demo 2</string>
+    <string name="menu_contrainlayout">Demo Contrain layout</string>
+    <string name="menu_circlelayout">Circle layout</string>
+    <string name="menu_cardview">Cardview dashboard demo</string>
     <string name="menu_activity">Activity demo</string>
     <string name="menu_intent">Intent demo</string>
     <string name="menu_fragement">Fragement demo</string>
+    <string name="menu_imageviewer">Load image</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="title_activity_intent">IntentActivity</string>
+
+    <!-- Common Action -->
+    <string name="common_action_close">Đóng</string>
+    <string name="common_action_save">Lưu</string>
+    <string name="common_action_add">Thêm mới</string>
+    <string name="common_action_edit">Chỉnh sửa</string>
+    <string name="common_action_delete">Xóa</string>
+
+    <!-- Menu Item -->
+    <string name="menu_item_search">Tìm kiếm</string>
+    <string name="menu_item_about_app">Giới thiệu</string>
+    <string name="menu_item_help">Trợ giúp</string>
+    <string name="menu_item_version_app">Phiên bản %s</string>
+
+    <!-- Main Screen -->
+    <string name="mainscreen_add_catergory">Thêm chủ đề</string>
+    <string name="mainscreen_empty_note">Danh sách ghi chú trống, bạn hãy thêm vào ghi chú mới</string>
+
+    <!-- Note detail screen -->
+    <string name="note_detail_share">Chia sẻ</string>
+    <string name="note_detail_delete">Xóa</string>
+    <string name="note_detail_category">Chủ đề</string>
+    <string name="note_detail_note_detail">Chi tiết</string>
+    <string name="note_detail_other_information">Thông tin khác</string>
+    <string name="note_detail_map_location">Vị trí</string>
+    <string name="note_detail_note_name_hint">Tên</string>
+    <string name="note_detail_note_detail_hint">Mô tả</string>
+    <string name="note_detail_add_note_hint">Ghi chú (Bạn có thể thêm sau)</string>
+    <string name="note_detail_address_hint">Địa chỉ</string>
+
+
+    <string-array name="Planets">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <array name="departments">
+        <item>Kỹ thuật</item>
+        <item>Chăm sóc khách hàng</item>
+        <item>Nghiên cứu và phát triển</item>
+        <item>Marketing</item>
+        <item>Nhân sự</item>
+    </array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

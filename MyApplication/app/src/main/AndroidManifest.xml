@@ -3,6 +3,7 @@
     package="vn.edu.itplus_academy.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -12,8 +13,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".FragmentDemoActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".CardViewActivity"></activity>
+        <activity android:name=".CircleLayoutActivity" />
+        <activity android:name=".ContrainLayoutSignupActivity" />
+        <activity android:name=".ContrainLayoutLoginActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".TourNoteActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".EmployeeListActivity" />
+        <activity android:name=".ViewControlDemo2Activity" />
+        <activity android:name=".ViewControlDemoActivity" />
+        <activity android:name=".FragementListActivity" />
+        <activity android:name=".FragmentDemoActivity" />
         <activity android:name=".GalleryActivity" />
         <activity android:name=".IntentAvantageActivity" />
         <activity

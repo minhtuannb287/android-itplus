@@ -1,9 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
+project.ext {
+    sdkVersion = "29.0.0"
+}
+
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.0"
+    buildToolsVersion "$sdkVersion"
     defaultConfig {
         applicationId "vn.edu.itplus_academy.myapplication"
         minSdkVersion 23
@@ -32,8 +36,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //noinspection GradleCompatible
-    implementation 'com.android.support:recyclerview-v7:29.0.0'
-    implementation 'com.android.support:design:29.0.0'
+    implementation "com.android.support:recyclerview-v7:$sdkVersion"
+    implementation "com.android.support:design:$sdkVersion"
 
     implementation 'com.squareup.picasso:picasso:2.71828'
 }

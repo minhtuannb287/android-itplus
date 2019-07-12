@@ -48,7 +48,7 @@ public class NavigationDrawActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, R.string.navigationdrawer_open, R.string.navigationdrawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
@@ -94,8 +94,28 @@ public class NavigationDrawActivity extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             // Handle the camera action
+        } else if (id == R.id.nav_viewcontrols) {
+            Intent intent = new Intent(this, ViewControlDemoActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.nav_viewcontrols2) {
+            Intent intent = new Intent(this, ViewControlDemo2Activity.class);
+            startActivity(intent);
+            return true;
+        }  else if (id == R.id.nav_contrainlayout) {
+            Intent intent = new Intent(this, ContrainLayoutLoginActivity.class);
+            startActivity(intent);
+            return true;
         } else if (id == R.id.nav_activity) {
             Intent intent = new Intent(this, FirstActivity.class);
+            startActivity(intent);
+            return true;
+        }else if (id == R.id.nav_circlelayout) {
+            Intent intent = new Intent(this, CircleLayoutActivity.class);
+            startActivity(intent);
+            return true;
+        }else if (id == R.id.nav_cardview) {
+            Intent intent = new Intent(this, CardViewActivity.class);
             startActivity(intent);
             return true;
         }else if (id == R.id.nav_evenhandler) {
@@ -122,6 +142,14 @@ public class NavigationDrawActivity extends AppCompatActivity
             Intent intent = new Intent(this, FragmentDemoActivity.class);
             startActivity(intent);
             return true;
+        }else if (id == R.id.nav_list_fragement) {
+            Intent intent = new Intent(this, FragementListActivity.class);
+            startActivity(intent);
+            return true;
+        }else if (id == R.id.nav_imageviewer) {
+            Intent intent = new Intent(this, ImageViewActivity.class);
+            startActivity(intent);
+            return true;
         }else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
@@ -132,6 +160,15 @@ public class NavigationDrawActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
 
+        }else if (id == R.id.nav_dangnhap) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+            return true;
+        }else if (id == R.id.nav_tournote) {
+            Intent intent = new Intent(this, TourNoteActivity.class);
+            startActivity(intent);
+            finish();
+            return true;
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

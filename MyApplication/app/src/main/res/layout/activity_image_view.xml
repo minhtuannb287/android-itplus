@@ -37,4 +37,8 @@
         android:layout_marginTop="10dp"
         android:hint="Phone number"
         android:inputType="phone" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </androidx.appcompat.widget.LinearLayoutCompat>

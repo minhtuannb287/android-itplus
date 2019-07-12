@@ -9,6 +9,26 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
+            android:id="@+id/nav_viewcontrols"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_control" />
+        <item
+            android:id="@+id/nav_viewcontrols2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_control2" />
+        <item
+            android:id="@+id/nav_contrainlayout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_contrainlayout" />
+        <item
+            android:id="@+id/nav_circlelayout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_circlelayout" />
+        <item
+            android:id="@+id/nav_cardview"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_cardview" />
+        <item
             android:id="@+id/nav_activity"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_activity" />
@@ -20,6 +40,11 @@
             android:id="@+id/nav_intent"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_intent" />
+
+        <item
+            android:id="@+id/nav_imageviewer"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_imageviewer" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
@@ -54,6 +79,14 @@
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
                 android:title="@string/menu_send" />
+            <item
+                android:id="@+id/nav_dangnhap"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Đăng nhập" />
+            <item
+                android:id="@+id/nav_tournote"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Quản lý ghi chú" />
         </menu>
     </item>
 

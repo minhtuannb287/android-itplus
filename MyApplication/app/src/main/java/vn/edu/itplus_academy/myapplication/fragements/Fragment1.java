@@ -30,13 +30,13 @@ public class Fragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_fragment1, container, false);
-        Button btnListFragment = view.findViewById(R.id.btnListFragment);
-        btnListFragment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+//        Button btnListFragment = view.findViewById(R.id.btnListFragment);
+//        btnListFragment.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
 
         return view;
     }
