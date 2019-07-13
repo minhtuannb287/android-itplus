@@ -25,4 +25,10 @@
 
     </fragment>
 
+    <Button
+        android:id="@+id/btnDialogFragment"
+        android:text="Mở Dialog Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

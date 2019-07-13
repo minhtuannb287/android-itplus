@@ -167,7 +167,7 @@ public class NavigationDrawActivity extends AppCompatActivity
         }else if (id == R.id.nav_tournote) {
             Intent intent = new Intent(this, TourNoteActivity.class);
             startActivity(intent);
-            finish();
+//            finish();
             return true;
         }
 
