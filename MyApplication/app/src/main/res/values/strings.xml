@@ -12,6 +12,8 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Cấu hình</string>
 
+    <string name="send_to">Gửi</string>
+
     <string name="menu_home">Home</string>
     <string name="menu_evenhandler">Event Handler</string>
     <string name="menu_control">Control demo</string>
@@ -23,6 +25,7 @@
     <string name="menu_intent">Intent demo</string>
     <string name="menu_fragement">Fragement demo</string>
     <string name="menu_imageviewer">Load image</string>
+    <string name="menu_horizontallistview">Horizontal listview demo</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tools">Tools</string>

@@ -36,8 +36,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //noinspection GradleCompatible
-    implementation "com.android.support:recyclerview-v7:$sdkVersion"
-    implementation "com.android.support:design:$sdkVersion"
 
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
+    implementation "androidx.cardview:cardview:1.0.0"
     implementation 'com.squareup.picasso:picasso:2.71828'
 }

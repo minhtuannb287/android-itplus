@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".CardViewActivity"></activity>
+        <activity android:name=".EbookFormActivity"></activity>
+        <activity android:name=".HorizontalListviewDemoActivity" />
+        <activity android:name=".CardViewActivity" />
         <activity android:name=".CircleLayoutActivity" />
         <activity android:name=".ContrainLayoutSignupActivity" />
         <activity android:name=".ContrainLayoutLoginActivity" />

@@ -142,6 +142,10 @@ public class NavigationDrawActivity extends AppCompatActivity
             Intent intent = new Intent(this, FragmentDemoActivity.class);
             startActivity(intent);
             return true;
+        }else if (id == R.id.nav_horizontal_listview) {
+            Intent intent = new Intent(this, HorizontalListviewDemoActivity.class);
+            startActivity(intent);
+            return true;
         }else if (id == R.id.nav_list_fragement) {
             Intent intent = new Intent(this, FragementListActivity.class);
             startActivity(intent);

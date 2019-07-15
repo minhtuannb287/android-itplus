@@ -11,7 +11,8 @@ import android.widget.Toast;
 import vn.edu.itplus_academy.myapplication.fragements.DialogEditFragment;
 import vn.edu.itplus_academy.myapplication.fragements.Fragment1;
 
-public class FragmentDemoActivity extends AppCompatActivity implements DialogEditFragment.DialogEditFragmentListener, Fragment1.OnFirstFragmentListener {
+public class FragmentDemoActivity extends AppCompatActivity
+        implements DialogEditFragment.DialogEditFragmentListener, Fragment1.OnFirstFragmentListener {
 
     Button btnDialogFragment;
 

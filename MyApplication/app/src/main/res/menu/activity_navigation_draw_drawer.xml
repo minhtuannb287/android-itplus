@@ -42,6 +42,11 @@
             android:title="@string/menu_intent" />
 
         <item
+            android:id="@+id/nav_horizontal_listview"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_horizontallistview" />
+
+        <item
             android:id="@+id/nav_imageviewer"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_imageviewer" />
