@@ -15,7 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".EbookFormActivity"></activity>
+        <activity android:name=".FabFlowWidgetActivity"></activity>
+        <activity android:name=".CoordinatorLayout2Activity" />
+        <activity android:name=".SnackbarFabActivity" />
+        <activity android:name=".EbookFormActivity" />
         <activity android:name=".HorizontalListviewDemoActivity" />
         <activity android:name=".CardViewActivity" />
         <activity android:name=".CircleLayoutActivity" />

@@ -17,9 +17,21 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_control2" />
         <item
+            android:id="@+id/nav_viewcontrols3"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Liên hệ" />
+        <item
             android:id="@+id/nav_contrainlayout"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_contrainlayout" />
+        <item
+            android:id="@+id/nav_coordinatorlayout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Coordinator Layout" />
+        <item
+            android:id="@+id/nav_coordinatorlayout2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Coordinator Layout 2" />
         <item
             android:id="@+id/nav_circlelayout"
             android:icon="@drawable/ic_menu_gallery"

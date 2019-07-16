@@ -94,6 +94,12 @@
         <item>Giá trị 3</item>
     </string-array>
 
+    <string name="first">Tiêu đề bài viết 1</string>
+    <string name="second">Tiêu đề bài viết 2</string>
+    <string name="third">Tiêu đề bài viết 3</string>
+    <string name="long_latin">
+        FAB là một nút bấm đặc biệt, chúng thường được biểu diễn bởi hình tròn với biểu tượng, nó nổi trên bề mặt các giao diện thiết kế, thường thì tùy ngữ cảnh bấm vào nó để thực hiện các hành động tương ứng.Nguyên tắc thiết kế giao diện có sử dụng FAB theo triết lý Materail Design được Google đề xuất ở đây: FAB Design. Thường thì bạn sử dụng FAB tùy thuộc ngữ cảnh, và FAB là thao tác chủ đạo đưa ra cho người dùng thực hiện. Ví dụ bạn đang ở màn hình xem danh sách email, có thể xuất hiện FAB để bấm vào đó tạo một Email mới (nếu cho rằng đây là thao tác người dùng hay sử dụng) ...
+    </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

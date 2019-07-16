@@ -37,6 +37,8 @@
         android:text="This is a TextView in CoordinatorLayout"
         app:layout_anchor="@+id/frID"
         app:layout_anchorGravity="right|bottom"
-        app:layout_behavior="vn.edu.itplus_academy.myapplication.behavior.FirstBehavior" />
+       />
+    <!--app:layout_behavior="vn.edu.itplus_academy.myapplication.behavior.FirstBehavior"-->
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
