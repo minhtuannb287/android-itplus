@@ -10,7 +10,7 @@ android {
     buildToolsVersion "$sdkVersion"
     defaultConfig {
         applicationId "vn.edu.itplus_academy.myapplication"
-        minSdkVersion 23
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -45,4 +45,25 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
 
     implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    //Lập trình phản ứng với
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
+
+    //Binding lên View
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    //RxBinding to Androidx
+    implementation 'com.jakewharton.rxbinding3:rxbinding:3.0.0-alpha2'
+
+    implementation 'com.jakewharton.rxbinding3:rxbinding-core:3.0.0-alpha2'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-appcompat:3.0.0-alpha2'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-drawerlayout:3.0.0-alpha2'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-leanback:3.0.0-alpha2'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-recyclerview:3.0.0-alpha2'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-slidingpanelayout:3.0.0-alpha2'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:3.0.0-alpha2'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-viewpager:3.0.0-alpha2'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-material:3.0.0-alpha2'
 }

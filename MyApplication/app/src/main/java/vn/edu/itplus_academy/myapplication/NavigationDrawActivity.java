@@ -188,6 +188,10 @@ public class NavigationDrawActivity extends AppCompatActivity
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             return true;
+        }else if (id == R.id.nav_rxjavademo) {
+            Intent intent = new Intent(this, RxJavaDemoActivity.class);
+            startActivity(intent);
+            return true;
         }else if (id == R.id.nav_tournote) {
             Intent intent = new Intent(this, TourNoteActivity.class);
             startActivity(intent);

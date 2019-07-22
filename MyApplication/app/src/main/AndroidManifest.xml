@@ -15,10 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".RxJavaDemoActivity"></activity>
         <activity
             android:name=".VideoViewActivity"
             android:label="@string/title_activity_video_view"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".FabFlowWidgetActivity" />
         <activity android:name=".CoordinatorLayout2Activity" />
@@ -47,7 +48,7 @@
         <activity
             android:name=".NavigationDrawActivity"
             android:label="@string/title_activity_navigation_draw"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

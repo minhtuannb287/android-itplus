@@ -45,4 +45,9 @@
         <item name="android:paddingBottom">24dp</item>
         <item name="android:orientation">vertical</item>
     </style>
+
+    <!--Demo Splash Screen-->
+    <style name="ColdStart" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/ll_win_bg_splash</item>
+    </style>
 </resources>
