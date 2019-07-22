@@ -17,6 +17,14 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_control2" />
         <item
+            android:id="@+id/nav_webview"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Webview demo" />
+        <item
+            android:id="@+id/nav_videoview"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Videoview demo" />
+        <item
             android:id="@+id/nav_viewcontrols3"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Liên hệ" />

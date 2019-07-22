@@ -102,6 +102,14 @@ public class NavigationDrawActivity extends AppCompatActivity
             Intent intent = new Intent(this, ViewControlDemo2Activity.class);
             startActivity(intent);
             return true;
+        }else if (id == R.id.nav_webview) {
+            Intent intent = new Intent(this, WebViewActivity.class);
+            startActivity(intent);
+            return true;
+        }else if (id == R.id.nav_videoview) {
+            Intent intent = new Intent(this, VideoViewActivity.class);
+            startActivity(intent);
+            return true;
         }else if (id == R.id.nav_viewcontrols3) {
             Intent intent = new Intent(this, ContactActivity.class);
             startActivity(intent);

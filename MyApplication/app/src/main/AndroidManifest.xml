@@ -15,7 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".FabFlowWidgetActivity"></activity>
+        <activity
+            android:name=".VideoViewActivity"
+            android:label="@string/title_activity_video_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".FabFlowWidgetActivity" />
         <activity android:name=".CoordinatorLayout2Activity" />
         <activity android:name=".SnackbarFabActivity" />
         <activity android:name=".EbookFormActivity" />
