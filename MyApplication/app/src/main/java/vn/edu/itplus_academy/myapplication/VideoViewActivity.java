@@ -1,5 +1,6 @@
 package vn.edu.itplus_academy.myapplication;
 
+import android.media.MediaFormat;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -13,6 +14,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.Locale;
 
 public class VideoViewActivity extends AppCompatActivity {
 
@@ -43,8 +49,11 @@ public class VideoViewActivity extends AppCompatActivity {
 
         try {
 
-            videoView.showContextMenu();
+            String nameUrl = "http://videos.4fanclub.vn/android/Udemy%20-%20The%20Essential%20Android%20O%20Developer%20Course/07%20The%20User%20Interface%20Part%201%20-%20Layouts/020%20View%20and%20View%20Groups-en.srt";
+            InputStream inputStream = new URL(nameUrl).openStream();
+//            MediaFormat mediaFormat =
             videoView.setVideoPath("http://videos.4fanclub.vn/android/Udemy%20-%20The%20Essential%20Android%20O%20Developer%20Course/07%20The%20User%20Interface%20Part%201%20-%20Layouts/020%20View%20and%20View%20Groups.mp4");
+            videoView.addSubtitleSource(inputStream,MediaFormat.createSubtitleFormat("text/srt", Locale.ENGLISH.getLanguage()));
 
         } catch (Exception e) {
             Log.e("Error", e.getMessage());
