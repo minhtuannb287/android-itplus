@@ -43,12 +43,12 @@
         <activity
             android:name=".IntentActivity"
             android:label="@string/title_activity_intent"
-            android:theme="@style/AppTheme.NoActionBar" />
+         />
         <activity android:name=".EventHandlerActivity" />
         <activity
             android:name=".NavigationDrawActivity"
             android:label="@string/title_activity_navigation_draw"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
