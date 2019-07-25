@@ -13,8 +13,6 @@ public class EbookFormActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ebook_form);
 
-
-
         //lệnh xử lý DatePickerDialog
         Button bChangeDate=(Button) findViewById(R.id.buttonDate);
         bChangeDate.setOnClickListener(new View.OnClickListener() {

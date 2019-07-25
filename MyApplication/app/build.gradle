@@ -66,4 +66,14 @@ dependencies {
     implementation 'com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:3.0.0-alpha2'
     implementation 'com.jakewharton.rxbinding3:rxbinding-viewpager:3.0.0-alpha2'
     implementation 'com.jakewharton.rxbinding3:rxbinding-material:3.0.0-alpha2'
+
+    //HTTP Client ket noi du lieu may chu
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+
+    // JSON Parsing
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+
 }
