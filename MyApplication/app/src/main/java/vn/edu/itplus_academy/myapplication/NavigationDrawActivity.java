@@ -184,6 +184,10 @@ public class NavigationDrawActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
 
+        }else if (id == R.id.nav_quanlysach) {
+            Intent intent = new Intent(this, EbookFormActivity.class);
+            startActivity(intent);
+            return true;
         }else if (id == R.id.nav_dangnhap) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);

@@ -9,18 +9,18 @@
 
     <TableRow
         android:id="@+id/tableRow1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tác giả:" />
 
         <Spinner
-            android:id="@+id/spinner1"
-            android:layout_width="wrap_content"
+            android:id="@+id/spTacGia"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_span="2" />
 
@@ -28,17 +28,17 @@
 
     <TableRow
         android:id="@+id/tableRow2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tên sách:" />
 
         <EditText
-            android:id="@+id/editTextTitle"
+            android:id="@+id/etTenSach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_span="2"
@@ -51,28 +51,21 @@
 
     <TableRow
         android:id="@+id/tableRow3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvNgay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ngày XB:" />
+            android:text="Ngày nhập:" />
 
         <EditText
-            android:id="@+id/editTextDate"
-            android:layout_width="wrap_content"
+            android:id="@+id/etNgay"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date" />
+            android:hint="Nhập ngày" />
 
-        <Button
-            android:id="@+id/buttonDate"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="..." />
 
     </TableRow>
 
@@ -82,7 +75,7 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/buttonInsertBook"
+            android:id="@+id/btThemSach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_span="3"
@@ -97,7 +90,7 @@
     </TableRow>
 
     <ListView
-        android:id="@+id/listViewBook"
+        android:id="@+id/lvBook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     </ListView>
