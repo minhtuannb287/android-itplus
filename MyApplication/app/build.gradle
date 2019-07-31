@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 
 project.ext {
     sdkVersion = "29.0.0"
@@ -79,4 +79,5 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
 
 
+//    implementation 'com.github.MorochoRochaDarwin:HorizontalScrollMenu:2.0.0'
 }

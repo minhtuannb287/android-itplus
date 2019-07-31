@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeDetailActivity">
+
+    <TextView
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:id="@+id/chitietNV"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="50sp"
+        android:text="Chi tiết nhân viên"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableLayout
+
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/chitietNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TableRow>
+
+            <TextView
+                android:textSize="30sp"
+                android:text="Họ tên: "/>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Name"
+                android:textSize="30sp"
+                android:id="@+id/tvHoten"
+                android:layout_margin="5dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textSize="30sp"
+                android:text="Chức vụ :"
+                />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvChucvu"
+                android:textSize="30sp"
+                android:text="Hole"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textSize="30sp"
+                android:text="Phòng Ban:"/>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvPhongban"
+                android:textSize="30sp"
+                android:text="Deparment:"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textSize="30sp"
+                android:text="Miêu tả:"/>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvMota"
+                android:textSize="30sp"
+                android:text=" Describe "/>
+
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

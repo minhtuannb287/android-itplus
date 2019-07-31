@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".RxJavaDemoActivity"></activity>
+        <activity android:name=".EmployeeFormActivity"></activity>
+        <activity android:name=".EmployeeDetailActivity" />
+        <activity android:name=".RxJavaDemoActivity" />
         <activity
             android:name=".VideoViewActivity"
             android:label="@string/title_activity_video_view"
@@ -42,8 +44,7 @@
         <activity android:name=".IntentAvantageActivity" />
         <activity
             android:name=".IntentActivity"
-            android:label="@string/title_activity_intent"
-         />
+            android:label="@string/title_activity_intent" />
         <activity android:name=".EventHandlerActivity" />
         <activity
             android:name=".NavigationDrawActivity"

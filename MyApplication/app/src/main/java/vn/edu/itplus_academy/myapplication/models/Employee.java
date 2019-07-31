@@ -1,8 +1,38 @@
 package vn.edu.itplus_academy.myapplication.models;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
     private String id;
     private String name;
+    private String chucvu;
+    private String phongban;
+
+    public String getChucvu() {
+        return chucvu;
+    }
+
+    public void setChucvu(String chucvu) {
+        this.chucvu = chucvu;
+    }
+
+    public String getPhongban() {
+        return phongban;
+    }
+
+    public void setPhongban(String phongban) {
+        this.phongban = phongban;
+    }
+
+    public String getMota() {
+        return mota;
+    }
+
+    public void setMota(String mota) {
+        this.mota = mota;
+    }
+
+    private String mota;
     private boolean gender;
     public String getId() {
         return id;

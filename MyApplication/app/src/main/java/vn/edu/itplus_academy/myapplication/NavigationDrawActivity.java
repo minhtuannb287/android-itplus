@@ -180,7 +180,10 @@ public class NavigationDrawActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_tools) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_quanlynhanvien) {
+            Intent intent = new Intent(this, EmployeeListActivity.class);
+            startActivity(intent);
+            return true;
 
         } else if (id == R.id.nav_send) {
 
