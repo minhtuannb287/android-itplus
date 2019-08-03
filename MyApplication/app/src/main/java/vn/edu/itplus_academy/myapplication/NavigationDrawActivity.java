@@ -22,6 +22,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
+import vn.edu.itplus_academy.myapplication.games.TicTacToeActivity;
+
 public class NavigationDrawActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -187,6 +189,10 @@ public class NavigationDrawActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
 
+        }else if (id == R.id.nav_tictactoe) {
+            Intent intent = new Intent(this, TicTacToeActivity.class);
+            startActivity(intent);
+            return true;
         }else if (id == R.id.nav_quanlysach) {
             Intent intent = new Intent(this, EbookFormActivity.class);
             startActivity(intent);

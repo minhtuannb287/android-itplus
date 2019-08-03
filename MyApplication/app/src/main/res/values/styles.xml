@@ -50,4 +50,11 @@
     <style name="ColdStart" parent="AppTheme">
         <item name="android:windowBackground">@drawable/ll_win_bg_splash</item>
     </style>
+
+    <style name="Button" parent="@android:style/Widget.Button">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

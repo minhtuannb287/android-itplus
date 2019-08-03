@@ -97,6 +97,10 @@
     <item android:title="Communicate">
         <menu>
             <item
+                android:id="@+id/nav_tictactoe"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Tic Tac Toe" />
+            <item
                 android:id="@+id/nav_quanlysach"
                 android:icon="@drawable/ic_menu_gallery"
                 android:title="Quản lý Sách" />

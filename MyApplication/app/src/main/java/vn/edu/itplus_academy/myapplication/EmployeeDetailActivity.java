@@ -2,15 +2,19 @@ package vn.edu.itplus_academy.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import vn.edu.itplus_academy.myapplication.helpers.MySQLiteOpenHelper;
 import vn.edu.itplus_academy.myapplication.models.Employee;
 
 public class EmployeeDetailActivity extends AppCompatActivity {
 
     TextView tvHoten, tvChucvu, tvPhongban, tvMota;
+    SQLiteDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +34,7 @@ public class EmployeeDetailActivity extends AppCompatActivity {
         tvChucvu.setText(obj.getChucvu());
         tvPhongban.setText(obj.getPhongban());
         tvMota.setText(obj.getMota());
+
+
     }
 }
