@@ -13,21 +13,33 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
+
+import vn.edu.itplus_academy.myapplication.daos.NoteItemDAO;
 import vn.edu.itplus_academy.myapplication.fragements.DialogEditFragment;
 import vn.edu.itplus_academy.myapplication.fragements.Fragment1;
+import vn.edu.itplus_academy.myapplication.fragements.NoteFormFragment;
+import vn.edu.itplus_academy.myapplication.fragements.NoteListFragment;
+import vn.edu.itplus_academy.myapplication.models.NoteItem;
 
 public class TourNoteActivity extends AppCompatActivity {
 
 
-    private View btnThemMoiGhiChu;
+    private View btnThemMoiGhiChu, btnDanhSach;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
     private NavigationView nvDrawer;
 
+
+//    ListView listViewNote;
+//    ArrayAdapter<NoteItem> adapter;
+//    ArrayList<NoteItem> myNoteItems;
 
 
     @Override
@@ -43,9 +55,18 @@ public class TourNoteActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-
+//
+//        listViewNote = findViewById(R.id.listviewNote);
+//
+//        NoteItemDAO dao = new NoteItemDAO(this);
+//        myNoteItems = dao.getAll();
+//        adapter = new ArrayAdapter<>(this, R.layout.item_note, myNoteItems);
+//        listViewNote.setAdapter(adapter);
 
         btnThemMoiGhiChu = findViewById(R.id.btnThemGhiChu);
+        btnThemMoiGhiChu.setOnClickListener(myOnclick);
+        btnDanhSach = findViewById(R.id.btnDanhSach);
+        btnDanhSach.setOnClickListener(myOnclick);
     }
 
     @Override
@@ -115,11 +136,15 @@ public class TourNoteActivity extends AppCompatActivity {
 
             switch (view.getId()){
                 case R.id.btnThemGhiChu:
-                    fragmentClass = DialogEditFragment.class;
+                    fragmentClass = NoteFormFragment.class;
                     setTitle("Thêm mới ghi chú");
                     break;
+                case R.id.btnDanhSach:
+                    fragmentClass = NoteListFragment.class;
+                    setTitle("Danh sách ghi chú");
+                    break;
                 default:
-                    fragmentClass = DialogEditFragment.class;
+                    fragmentClass = NoteListFragment.class;
             }
 
             try {

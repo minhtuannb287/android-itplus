@@ -30,6 +30,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
     public static final String TABLE_NHANVIEN = "nhanvien";
     public static final String TABLE_CHUCVU = "chucvu";
     public static final String TABLE_THONGBAO = "thongbao";
+    public static final String TABLE_GHICHU = "ghichu";
 
 
     public MySQLiteOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
@@ -68,6 +69,10 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
                 "UID TEXT NOT NULL, " +
                 "tieude TEXT NOT NULL, " +
                 "noidung TEXT NOT NULL);");
+        db.execSQL("CREATE TABLE "+ TABLE_GHICHU + " (id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "trangthai INTEGER NOT NULL, " +
+                "tieude TEXT NOT NULL, " +
+                "noidung TEXT NOT NULL);");
 
     }
 
@@ -82,6 +87,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
             db.execSQL("DROP TABLE IF EXISTS " + TABLE_NHANVIEN);
             db.execSQL("DROP TABLE IF EXISTS " + TABLE_CHUCVU);
             db.execSQL("DROP TABLE IF EXISTS " + TABLE_THONGBAO);
+            db.execSQL("DROP TABLE IF EXISTS " + TABLE_GHICHU);
             onCreate(db);
         }
     }

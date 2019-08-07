@@ -64,8 +64,29 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/btnDanhSach"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/navigation_item_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
 
-            <!-- Item Help -->
+                <ImageView
+                    android:layout_width="@dimen/navigation_item_icon_size"
+                    android:layout_height="@dimen/navigation_item_icon_size"
+                    android:src="@drawable/ic_note" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_extra_extra_large"
+                    android:text="Danh sach ghi chu" />
+
+            </LinearLayout>
+            <!-- Item Them -->
 
             <LinearLayout
                 android:id="@+id/btnThemGhiChu"
@@ -142,5 +163,4 @@
         </LinearLayout>
 
     </com.google.android.material.navigation.NavigationView>
-
 </androidx.drawerlayout.widget.DrawerLayout>

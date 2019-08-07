@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.quanlythuchi.fragements.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/toThemGiaoDichFragment"
+            app:destination="@id/themGiaoDichFragment" />
+        <action
+            android:id="@+id/toGioiThieuFragment"
+            app:destination="@id/gioiThieuFragment" />
+        <action
+            android:id="@+id/toQuanLyGiaoDichFragment"
+            app:destination="@id/quanLyGiaoDichFragment" />
+        <action
+            android:id="@+id/toDanhMucFragment"
+            app:destination="@id/danhMucFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/themGiaoDichFragment"
+        android:name="com.quanlythuchi.fragements.ThemGiaoDichFragment"
+        android:label="fragment_them_giao_dich"
+        tools:layout="@layout/fragment_them_giao_dich" />
+    <fragment
+        android:id="@+id/gioiThieuFragment"
+        android:name="com.quanlythuchi.fragements.GioiThieuFragment"
+        android:label="fragment_gioi_thieu"
+        tools:layout="@layout/fragment_gioi_thieu" />
+    <fragment
+        android:id="@+id/quanLyGiaoDichFragment"
+        android:name="com.quanlythuchi.fragements.QuanLyGiaoDichFragment"
+        android:label="fragment_quan_ly_giao_dich"
+        tools:layout="@layout/fragment_quan_ly_giao_dich" />
+    <fragment
+        android:id="@+id/danhMucFragment"
+        android:name="com.quanlythuchi.fragements.DanhMucFragment"
+        android:label="fragment_danh_muc"
+        tools:layout="@layout/fragment_danh_muc" />
+</navigation>
