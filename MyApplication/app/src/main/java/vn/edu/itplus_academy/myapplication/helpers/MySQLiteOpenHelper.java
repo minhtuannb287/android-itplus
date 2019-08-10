@@ -50,18 +50,21 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
                 CHUDEID_COMMENT + " INTEGER, " +
                 NOIDUNG_COMMENT + " TEXT NOT NULL, " +
                 NGAYSUA_COMMENT + " TEXT );");
+
         db.execSQL("CREATE TABLE "+ TABLE_CHUDE + " (sn INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "UID TEXT NOT NULL, " +
                 "PARENTID INTEGER, " +
                 "ten TEXT NOT NULL, " +
                 "mota TEXT NOT NULL, " +
                 "ngaysua TEXT );");
+
         db.execSQL("CREATE TABLE "+ TABLE_NHANVIEN + " (sn INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "hodem TEXT NOT NULL, ten TEXT NOT NULL, " +
                 "PHONGBANID INTEGER, " +
                 "gioitinh INTEGER, " +
                 "ngaysinh TEXT, " +
                 "hinhanh TEXT );");
+
         db.execSQL("CREATE TABLE "+ TABLE_CHUCVU + " (sn INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "ten TEXT NOT NULL, " +
                 "mota TEXT);");

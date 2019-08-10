@@ -176,13 +176,22 @@ public class NavigationDrawActivity extends AppCompatActivity
             Intent intent = new Intent(this, ImageViewActivity.class);
             startActivity(intent);
             return true;
+        }else if (id == R.id.nav_recycle) {
+            Intent intent = new Intent(this, RecycleViewActivity.class);
+            startActivity(intent);
+            return true;
         }else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_tools) {
 
-        } else if (id == R.id.nav_quanlynhanvien) {
+        } else if (id == R.id.nav_quanlysinhvien) {
+            Intent intent = new Intent(this, StudentManagerActivity.class);
+            startActivity(intent);
+            return true;
+
+        }else if (id == R.id.nav_quanlynhanvien) {
             Intent intent = new Intent(this, EmployeeListActivity.class);
             startActivity(intent);
             return true;

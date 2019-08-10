@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".games.TicTacToeActivity"></activity>
+        <activity android:name=".StudentManagerActivity"></activity>
+        <activity android:name=".games.TicTacToeActivity" />
         <activity android:name=".EmployeeFormActivity" />
         <activity android:name=".EmployeeDetailActivity" />
         <activity android:name=".RxJavaDemoActivity" />
