@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageApp"
+                android:src="@drawable/ic_app"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:gravity="center_vertical"
+                android:textSize="25sp"
+                android:layout_toRightOf="@+id/imageApp"
+                android:text="Quản lý công việc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnThem"
+                android:layout_width="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="match_parent"
+                android:text="+" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
