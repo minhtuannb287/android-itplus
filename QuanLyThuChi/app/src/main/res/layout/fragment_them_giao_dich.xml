@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:shrinkColumns="0"
     android:stretchColumns="1"
-    tools:context=".fragements.ThemGiaoDichFragment">
+    tools:context="com.quanlythuchi.fragements.ThemGiaoDichFragment">
 
     <TableRow>
         <TextView

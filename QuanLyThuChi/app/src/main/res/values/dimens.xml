@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="screen_ratio">0.82</dimen>
+    <dimen name="medium_font_size">14sp</dimen>
+    <dimen name="add_buttons_ratio">0.18</dimen>
+    <dimen name="button_padding_top">4dp</dimen>
+    <dimen name="button_padding_bottom">12dp</dimen>
+    <dimen name="main_button_title_font_size">10sp</dimen>
+    <dimen name="drawer_width">224dp</dimen>
+</resources>

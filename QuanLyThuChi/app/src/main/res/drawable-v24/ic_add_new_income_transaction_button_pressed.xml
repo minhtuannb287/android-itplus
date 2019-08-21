@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="512dp" android:width="512dp" android:viewportWidth="512" android:viewportHeight="512">
+    <path android:fillColor="@color/transaction_button_background" android:pathData="M256,26.4836 C381.557,26.4836,483.341,129.242,483.341,256 C483.341,382.758,381.557,485.516,256,485.516 C130.443,485.516,28.6591,382.758,28.6591,256 C28.6591,129.242,130.443,26.4836,256,26.4836 Z" android:strokeWidth="0"/>
+    <path android:pathData="M256.001,31.7273 A224.27297,223.55858,0,0,0,32.4417,256.001 A224.27297,223.55858,0,0,0,256.001,480.273 A224.27297,223.55858,0,0,0,479.558,256.001 A224.27297,223.55858,0,0,0,256.001,31.7273 Z" android:strokeColor="#000000" android:strokeWidth="3.2385" android:strokeLineJoin="round" android:strokeAlpha="0.7" android:fillAlpha="0.7"/>
+    <path android:fillColor="#71d398" android:pathData="M256,2 A254,254,0,0,0,2,256 A254,254,0,0,0,256,510 A254,254,0,0,0,510,256 A254,254,0,0,0,256,2 Z M256,30 A226,226,0,0,1,482,256 A226,226,0,0,1,256,482 A226,226,0,0,1,30,256 A226,226,0,0,1,256,30 Z M203.5,245.152 L203.5,269.152 L308.5,269.152 L308.5,245.152 Z"/>
+    <path android:fillColor="#71d398" android:pathData="M268,203.5 L244,203.5 L244,308.5 L268,308.5 Z"/>
+</vector>
