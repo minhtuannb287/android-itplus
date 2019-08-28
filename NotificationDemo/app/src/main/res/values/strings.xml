@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NotificationDemo</string>
+    <string name="channelName">Hệ thống</string>
+    <string name="channelDescription">Thông báo từ Hệ thống</string>
+</resources>
