@@ -1,0 +1,61 @@
+package com.example.colorpanelapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+
+public class MainActivity extends AppCompatActivity {
+
+    GiayVe giayVe;
+    ImageButton image;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        giayVe = (GiayVe) findViewById(R.id.drawing);
+        LinearLayout linear = (LinearLayout) findViewById(R.id.paint_colors);
+        image = (ImageButton) linear.getChildAt(0);
+
+        /*
+         * Bấm nút xóa thì nét vẽ sẽ sử dụng để xóa
+         */
+        Button btnXoa = (Button) findViewById(R.id.xoa);
+        btnXoa.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                giayVe.setErase(true);
+            }
+        });
+        /*
+         * Bấm nút Tạo mới thì sẽ xóa hết trang cũ đi.
+         */
+        Button btnNew = (Button) findViewById(R.id.newdraw);
+        btnNew.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                giayVe.startNew();
+            }
+        });
+    }
+
+    /*
+     * Sự kiện khi click vào một trong số các màu. màu sẽ thay đổi
+     */
+    public void paintClicked(View v) {
+        if (v != image) {
+            giayVe.setErase(false);
+            // ImageButton imgView = (ImageButton) v;
+            String color = v.getTag().toString();
+            giayVe.setColor(color);
+            image = (ImageButton) v;
+        }
+    }
+}

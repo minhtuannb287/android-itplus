@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bố Tuấn Tặng Gia Linh - V1</string>
+
+    <string name="start_new">Mới</string>
+    <string name="brush">Cọ vẽ</string>
+    <string name="erase">Tẩy</string>
+    <string name="save">Lưu</string>
+    <string name="paint">Sơn</string>
+</resources>
