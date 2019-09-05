@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnDialog;
     String textTitle, textContent;
-    final String CHANNEL_ID = "MainAc";
+//    final String CHANNEL_ID = "MainAc";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,16 +28,21 @@ public class MainActivity extends AppCompatActivity {
         textTitle ="Van hoa NHAY";
         textContent = "Trieu hoi cac thanh";
 
+        AlarmUtils.create(this);
+
 //        createNotificationChannel();
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.drawable.notification_icon)
-                .setContentTitle(textTitle)
-                .setContentText(textContent)
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+//        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+//                .setSmallIcon(R.drawable.notification_icon)
+//                .setContentTitle(textTitle)
+//                .setContentText(textContent)
+//                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+//        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+//        notificationManager.notify(1, builder.build());
 
 
-        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+
+
 
         Toast.makeText(this, "Noi dung thong bao!", Toast.LENGTH_SHORT).show();
 
@@ -53,28 +58,30 @@ public class MainActivity extends AppCompatActivity {
 
 
 // notificationId is a unique int for each notification that you must define
-        notificationManager.notify(1, builder.build());
 
 
 
 
 
-        AlarmUtils.create(this);
+
+
     }
 
-    private void createNotificationChannel() {
-        // Create the NotificationChannel, but only on API 26+ because
-        // the NotificationChannel class is new and not in the support library
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            CharSequence name = getString(R.string.channelName);
-            String description = getString(R.string.channelDescription);
-            int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
-            channel.setDescription(description);
-            // Register the channel with the system; you can't change the importance
-            // or other notification behaviors after this
-            NotificationManager notificationManager = getSystemService(NotificationManager.class);
-            notificationManager.createNotificationChannel(channel);
-        }
-    }
+//    private void createNotificationChannel() {
+//        // Create the NotificationChannel, but only on API 26+ because
+//        // the NotificationChannel class is new and not in the support library
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//            CharSequence name = getString(R.string.channelName);
+//            String description = getString(R.string.channelDescription);
+//            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+//            NotificationChannel channel = new NotificationChannel(CHANNEL_ID,
+//                    name, importance);
+//            channel.setDescription(description);
+//            // Register the channel with the system; you can't change the importance
+//            // or other notification behaviors after this
+//            NotificationManager notificationManager = getSystemService(
+//                    NotificationManager.class);
+//            notificationManager.createNotificationChannel(channel);
+//        }
+//    }
 }

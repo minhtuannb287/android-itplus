@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".SchedulingService"/>
+        <service  android:enabled="true" android:name=".SchedulingService"/>
     </application>
 
     <dist:module dist:instant="true" />

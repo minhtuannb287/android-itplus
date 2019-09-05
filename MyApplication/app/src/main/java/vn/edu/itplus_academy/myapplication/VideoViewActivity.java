@@ -32,17 +32,12 @@ public class VideoViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video_view);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         videoView = findViewById(R.id.videoView);
-
         // Tạo bộ điều khiển
         if (mediaController == null) {
             mediaController = new MediaController(VideoViewActivity.this);
-
             // Neo vị trí của MediaController với VideoView.
             mediaController.setAnchorView(videoView);
-
-
             // Sét đặt bộ điều khiển cho VideoView.
             videoView.setMediaController(mediaController);
         }

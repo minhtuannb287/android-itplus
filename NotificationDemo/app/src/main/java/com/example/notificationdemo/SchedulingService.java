@@ -34,7 +34,7 @@ public class SchedulingService extends IntentService {
                         .setContentText("index = " + index)
                         .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
                         .setDefaults(Notification.DEFAULT_SOUND)
-                        .setAutoCancel(true)
+                        .setAutoCancel(false)
                         .setPriority(6)
                         .setVibrate(new long[]{TIME_VIBRATE, TIME_VIBRATE, TIME_VIBRATE, TIME_VIBRATE,
                                 TIME_VIBRATE})

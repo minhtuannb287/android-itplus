@@ -36,9 +36,18 @@ public class GiayVe extends View {
         drawPath = new Path();
         drawPaint = new Paint();
         drawPaint.setColor(drawColor);
-        drawPaint.setStrokeWidth(drawSize);
+        drawPaint.setStrokeWidth(getDrawSize());
         drawPaint.setStyle(Paint.Style.STROKE);
         canvasPaint = new Paint(Paint.DITHER_FLAG);
+    }
+
+    public int getDrawSize() {
+        return drawSize;
+    }
+
+    public void setDrawSize(int drawSize) {
+        this.drawSize = drawSize;
+        init();
     }
 
     @Override
@@ -79,7 +88,7 @@ public class GiayVe extends View {
             default:
                 return false;
         }
-        // redraw
+        // re draw
         invalidate();
         return true;
     }

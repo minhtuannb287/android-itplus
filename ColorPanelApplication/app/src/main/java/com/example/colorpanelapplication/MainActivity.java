@@ -7,11 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.SeekBar;
 
 public class MainActivity extends AppCompatActivity {
 
     GiayVe giayVe;
     ImageButton image;
+    SeekBar seekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,24 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout linear = (LinearLayout) findViewById(R.id.paint_colors);
         image = (ImageButton) linear.getChildAt(0);
 
+        seekBar = findViewById(R.id.seekBar);
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+
+                giayVe.setDrawSize(i);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
         /*
          * Bấm nút xóa thì nét vẽ sẽ sử dụng để xóa
          */
